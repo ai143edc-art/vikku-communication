@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Phone display replacement">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2456"/><stop offset="1" stop-color="#050f2a"/></linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38BDF8"/><stop offset="1" stop-color="#1466E0"/></linearGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g opacity=".1" stroke="#5BB0FF" stroke-width="1"><path d="M0 70h400M0 150h400M0 230h400M120 0v300M280 0v300"/></g>
+  <!-- phone body -->
+  <rect x="150" y="55" width="120" height="200" rx="18" fill="#0c2c63" stroke="#3a7bdc" stroke-width="2"/>
+  <g fill="#0a2350" stroke="#3a7bdc" stroke-width="1"><rect x="165" y="80" width="40" height="30" rx="3"/><rect x="215" y="80" width="40" height="55" rx="3"/><rect x="165" y="120" width="40" height="50" rx="3"/></g>
+  <g stroke="#5BB0FF" stroke-width="1" opacity=".4"><path d="M165 185h90M165 205h90M165 225h60"/></g>
+  <!-- lifted display panel (offset) -->
+  <g filter="url(#gl)">
+    <rect x="196" y="35" width="120" height="200" rx="18" fill="url(#scr)" opacity=".9" transform="rotate(8 256 135)"/>
+  </g>
+  <rect x="196" y="35" width="120" height="200" rx="18" fill="none" stroke="#bfe3ff" stroke-width="2" transform="rotate(8 256 135)"/>
+  <g transform="rotate(8 256 135)" opacity=".5" stroke="#eaf6ff" stroke-width="1.5" fill="none"><rect x="208" y="52" width="96" height="166" rx="10"/></g>
+  <!-- flex cable -->
+  <path d="M205 250q-10 18 6 26" fill="none" stroke="#FFB020" stroke-width="4" stroke-linecap="round"/>
+  <rect x="200" y="270" width="22" height="12" rx="2" fill="#FFB020" opacity=".85"/>
+  <!-- suction tool dot -->
+  <circle cx="300" cy="70" r="7" fill="#7CF2C8" filter="url(#gl)"/>
+</svg>

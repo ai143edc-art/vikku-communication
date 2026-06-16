@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Soldering repair on circuit board">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2456"/><stop offset="1" stop-color="#050f2a"/></linearGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g opacity=".1" stroke="#5BB0FF" stroke-width="1"><path d="M0 80h400M0 160h400M0 230h400M80 0v300M320 0v300"/></g>
+  <!-- board -->
+  <rect x="60" y="150" width="280" height="110" rx="8" fill="#0c3a2a" stroke="#39d39a" stroke-width="2"/>
+  <g fill="#0a2e22" stroke="#39d39a" stroke-width="1"><rect x="85" y="175" width="50" height="40" rx="3"/><rect x="150" y="185" width="34" height="24" rx="2"/><rect x="210" y="172" width="44" height="40" rx="3"/><rect x="270" y="186" width="22" height="20" rx="2"/></g>
+  <g stroke="#7CF2C8" stroke-width="1" opacity=".55"><path d="M85 230h220M120 150v110M250 150v110"/></g>
+  <g fill="#39d39a"><circle cx="100" cy="232" r="2"/><circle cx="160" cy="232" r="2"/><circle cx="232" cy="232" r="2"/></g>
+  <!-- solder joint glow -->
+  <circle cx="232" cy="190" r="9" fill="#FFB020" filter="url(#gl)"/>
+  <!-- soldering iron -->
+  <g filter="url(#gl)"><path d="M232 188 L300 70" stroke="#c9d8ef" stroke-width="7" stroke-linecap="round"/></g>
+  <path d="M300 70 L360 30" stroke="#1a3e74" stroke-width="16" stroke-linecap="round"/>
+  <path d="M300 70 L360 30" stroke="#2E8BFF" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+  <circle cx="232" cy="188" r="4" fill="#FFD37A"/>
+  <!-- smoke -->
+  <g stroke="#9fc0ee" stroke-width="2" fill="none" opacity=".35" stroke-linecap="round"><path d="M236 178c8-10-6-16 2-26"/><path d="M246 176c8-10-6-16 2-26"/></g>
+  <!-- tweezers -->
+  <g stroke="#9fb6d8" stroke-width="3" fill="none" stroke-linecap="round" opacity=".9"><path d="M70 60l84 116M96 52l66 120"/></g>
+</svg>

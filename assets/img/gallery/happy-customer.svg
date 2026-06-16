@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Happy customer with repaired phone">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2456"/><stop offset="1" stop-color="#050f2a"/></linearGradient>
+    <linearGradient id="ph" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38BDF8"/><stop offset="1" stop-color="#1466E0"/></linearGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g opacity=".1" stroke="#5BB0FF" stroke-width="1"><path d="M0 70h400M0 150h400M0 230h400M110 0v300M290 0v300"/></g>
+  <!-- person -->
+  <circle cx="160" cy="110" r="34" fill="#13315f" stroke="#5BB0FF" stroke-width="2"/>
+  <!-- smile face -->
+  <g stroke="#bfe3ff" stroke-width="3" fill="none" stroke-linecap="round"><path d="M148 104h2M170 104h2"/><path d="M147 120q13 12 26 0"/></g>
+  <path d="M112 250c0-40 22-66 48-66s48 26 48 66z" fill="#13315f" stroke="#5BB0FF" stroke-width="2"/>
+  <!-- phone in hand -->
+  <g transform="rotate(-12 250 150)" filter="url(#gl)"><rect x="222" y="96" width="64" height="118" rx="13" fill="url(#ph)"/></g>
+  <g transform="rotate(-12 250 150)"><rect x="222" y="96" width="64" height="118" rx="13" fill="none" stroke="#bfe3ff" stroke-width="2"/><path d="M243 150l9 9 18-20" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <!-- stars / sparkle -->
+  <g fill="#FFD37A"><path d="M320 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/><path d="M350 120l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></g>
+  <g fill="#7CF2C8"><circle cx="300" cy="150" r="3"/><circle cx="334" cy="185" r="2.5"/></g>
+</svg>

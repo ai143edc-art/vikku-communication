@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Repair tools and workbench">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2456"/><stop offset="1" stop-color="#050f2a"/></linearGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <g opacity=".1" stroke="#5BB0FF" stroke-width="1"><path d="M0 80h400M0 160h400M0 235h400M100 0v300M300 0v300"/></g>
+  <!-- bench surface -->
+  <rect x="30" y="220" width="340" height="14" rx="4" fill="#13315f" stroke="#3a7bdc" stroke-width="1.5"/>
+  <!-- hot-air / soldering station -->
+  <rect x="50" y="140" width="90" height="80" rx="8" fill="#0c2c63" stroke="#3a7bdc" stroke-width="2"/>
+  <rect x="62" y="155" width="66" height="30" rx="4" fill="#06183c" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="95" y="176" text-anchor="middle" font-family="Inter,Arial" font-size="13" fill="#7CF2C8">380°</text>
+  <circle cx="70" cy="202" r="5" fill="#FFB020"/><circle cx="90" cy="202" r="5" fill="#5BB0FF"/><circle cx="110" cy="202" r="5" fill="#39d39a"/>
+  <!-- soldering iron in holder -->
+  <path d="M150 220 L210 150" stroke="#1a3e74" stroke-width="12" stroke-linecap="round"/>
+  <path d="M210 150 L235 122" stroke="#c9d8ef" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="235" cy="122" r="4" fill="#FFD37A" filter="url(#gl)"/>
+  <!-- screwdriver -->
+  <g stroke-linecap="round"><path d="M250 220 L300 160" stroke="#9fb6d8" stroke-width="9"/><path d="M300 160 L322 132" stroke="#2E8BFF" stroke-width="12"/></g>
+  <!-- tweezers -->
+  <g stroke="#bcd9ff" stroke-width="3" fill="none" stroke-linecap="round"><path d="M330 220l34-70M344 220l24-66"/></g>
+  <!-- screws -->
+  <g fill="#5BB0FF"><circle cx="180" cy="228" r="3"/><circle cx="200" cy="228" r="3"/><circle cx="220" cy="228" r="3"/></g>
+</svg>
