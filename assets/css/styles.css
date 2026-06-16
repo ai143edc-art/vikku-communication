@@ -180,6 +180,17 @@ h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.01em;font-family:var(--displ
 .about p{color:var(--muted);font-size:15.5px;margin:0}
 .about strong{color:#dbe8ff}
 
+/* gallery (placeholder tiles — swap with real photos later) */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gtile{position:relative;margin:0;aspect-ratio:4/3;border:1px solid var(--border);border-radius:var(--radius);
+  background:linear-gradient(160deg,rgba(46,139,255,.12),rgba(6,18,44,.5));display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:10px;overflow:hidden;transition:transform .25s var(--ease),border-color .25s,box-shadow .25s}
+.gtile:hover{transform:translateY(-4px);border-color:var(--border-2);box-shadow:0 18px 40px -18px rgba(46,139,255,.5)}
+.gtile__ic{font-size:42px;filter:drop-shadow(0 4px 12px rgba(46,139,255,.5))}
+.gtile figcaption{font-family:var(--display);font-weight:600;color:#dbe8ff;font-size:15px}
+.gtile__soon{position:absolute;top:10px;right:10px;font-size:10.5px;font-weight:700;color:var(--blue-bright);
+  background:rgba(46,139,255,.14);border:1px solid var(--border);padding:3px 9px;border-radius:999px;letter-spacing:.03em}
+
 /* contact */
 .contact{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:stretch}
 .contact__info{display:grid;gap:12px}
@@ -191,6 +202,7 @@ a.cinfo:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 1
 .cinfo__ic--wa{background:rgba(37,211,102,.16)}
 .cinfo__ic--loc{background:rgba(56,189,248,.16)}
 .cinfo__ic--time{background:rgba(91,176,255,.12)}
+.cinfo__ic--mail{background:rgba(91,176,255,.14)}
 .cinfo b{font-family:var(--display);font-size:15px}
 .cinfo em{color:var(--blue-bright);font-style:normal;font-size:12.5px;font-weight:600}
 .cinfo span:last-child{font-size:14px;color:#cfdcf2;line-height:1.4}
@@ -239,6 +251,7 @@ a.cinfo:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 1
   .hero__art{order:-1}
   .cards{grid-template-columns:repeat(2,1fr)}
   .why{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(2,1fr)}
   .contact{grid-template-columns:1fr}
   .contact__qr{order:-1}
 }
