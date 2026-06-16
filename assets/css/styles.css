@@ -213,6 +213,8 @@ a.cinfo:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 1
 .qr-frame{background:#fff;padding:12px;border-radius:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
 .qr-frame img{width:180px;height:180px;display:block}
 .contact__qr-sub{color:var(--muted);font-size:12.5px;margin:12px 0 0}
+.savecard{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:26px;text-align:center}
+.savecard__note{color:var(--muted);font-size:13.5px}
 
 /* final cta */
 .finalcta{text-align:center}
